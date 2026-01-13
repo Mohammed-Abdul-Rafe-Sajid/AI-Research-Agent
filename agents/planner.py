@@ -1,11 +1,9 @@
-"""Planner agent stub."""
-from typing import List, Dict
+from graph.state import ResearchState
 
-
-class Planner:
-    """Create simple plans from intents."""
-
-    def plan(self, intent: Dict[str, float]) -> List[str]:
-        """Return a list of steps for a given intent."""
-        # TODO: implement planning logic
-        return ["analyze", "retrieve", "synthesize", "verify", "report"]
+def planner_node(state: ResearchState) -> ResearchState:
+    """
+    Research Planner Agent
+    - Reads: research_scope
+    - Writes: plan
+    """
+    return state

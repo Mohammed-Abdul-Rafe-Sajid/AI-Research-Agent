@@ -1,11 +1,9 @@
-"""Synthesis agent stub."""
-from typing import List
+from graph.state import ResearchState
 
-
-class SynthesisAgent:
-    """Synthesize information into a response or artifact."""
-
-    def synthesize(self, items: List[str]) -> str:
-        """Combine items into a single narrative."""
-        # TODO: replace with LLM or template-based synthesizer
-        return "\n".join(items)
+def synthesis_node(state: ResearchState) -> ResearchState:
+    """
+    Synthesis Agent
+    - Reads: documents
+    - Writes: notes
+    """
+    return state

@@ -1,9 +1,13 @@
-"""Graph state definitions."""
-from dataclasses import dataclass
-from typing import Any, Dict
+from typing import List, Dict, Any
+from pydantic import BaseModel
 
-
-@dataclass
-class State:
-    id: str
-    data: Dict[str, Any]
+class ResearchState(BaseModel):
+    user_query: str = ""
+    research_scope: Dict[str, Any] = {}
+    plan: List[str] = []
+    sources: List[Dict[str, Any]] = []
+    documents: List[Dict[str, Any]] = []
+    notes: List[Dict[str, Any]] = []
+    flags: List[Dict[str, Any]] = []
+    confidence_score: float = 0.0
+    final_report: str = ""

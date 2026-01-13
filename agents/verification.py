@@ -1,11 +1,9 @@
-"""Verification agent stub."""
-from typing import List
+from graph.state import ResearchState
 
-
-class VerificationAgent:
-    """Verify claims, outputs or artifacts."""
-
-    def verify(self, artifact: str, sources: List[str]) -> bool:
-        """Return True if artifact passes verification checks."""
-        # TODO: implement factuality checks, unit tests, heuristics
-        return True
+def verification_node(state: ResearchState) -> ResearchState:
+    """
+    Verification Agent
+    - Reads: notes, sources
+    - Writes: flags, confidence_score
+    """
+    return state

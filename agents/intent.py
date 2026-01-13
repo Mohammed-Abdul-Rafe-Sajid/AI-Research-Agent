@@ -1,11 +1,9 @@
-"""Intent detection agent stub."""
-from typing import Dict
+from graph.state import ResearchState
 
-
-class IntentAgent:
-    """Simple intent detection stub."""
-
-    def parse(self, text: str) -> Dict[str, float]:
-        """Return a dummy intent distribution."""
-        # TODO: replace with real model
-        return {"intent": 1.0}
+def intent_node(state: ResearchState) -> ResearchState:
+    """
+    Intent Analyzer Agent
+    - Reads: user_query
+    - Writes: research_scope
+    """
+    return state

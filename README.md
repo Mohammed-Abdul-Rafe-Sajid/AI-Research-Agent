@@ -1,6 +1,32 @@
-# AI Research Agent
+# AI Research Assistant Agent
 
-Project scaffold for an AI research agent with modular components.
+An autonomous multi-agent AI system that plans, retrieves, verifies, and synthesizes research information from multiple sources into structured reports.
+
+## Features
+- Multi-agent architecture using LangGraph
+- Autonomous research planning
+- Multi-source information retrieval
+- Structured synthesis
+- Claim verification & confidence scoring
+- Session memory + long-term vector memory (planned)
+
+## Architecture Overview
+User Query → Intent Analyzer → Research Planner → Retrieval → Synthesis → Verification → Report Generator
+
+## Tech Stack
+- Python
+- LangGraph
+- Gemini (LLM)
+- FAISS (Vector DB)
+- FastAPI
+- Streamlit
+
+## Project Structure
+See repository tree for modular agent design.
+
+## Status
+🚧 In progress — foundation complete, agent logic under development.
+
 
 Structure:
 

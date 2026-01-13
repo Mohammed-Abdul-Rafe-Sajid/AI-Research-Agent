@@ -1,16 +1,31 @@
-"""Simple graph utilities."""
-from typing import Dict, List
-from .state import State
+from langgraph.graph import StateGraph
+from graph.state import ResearchState
 
+from agents.intent import intent_node
+from agents.planner import planner_node
+from agents.retrieval import retrieval_node
+from agents.synthesis import synthesis_node
+from agents.verification import verification_node
+from agents.report import report_node
 
-class Graph:
-    def __init__(self):
-        self.nodes: Dict[str, State] = {}
-        self.edges: Dict[str, List[str]] = {}
+def build_graph():
+    graph = StateGraph(ResearchState)
 
-    def add_node(self, state: State):
-        self.nodes[state.id] = state
-        self.edges.setdefault(state.id, [])
+    graph.add_node("intent", intent_node)
+    graph.add_node("planner", planner_node)
+    graph.add_node("retrieval", retrieval_node)
+    graph.add_node("synthesis", synthesis_node)
+    graph.add_node("verification", verification_node)
+    graph.add_node("report", report_node)
 
-    def add_edge(self, a: str, b: str):
-        self.edges.setdefault(a, []).append(b)
+    graph.set_entry_point("intent")
+
+    graph.add_edge("intent", "planner")
+    graph.add_edge("planner", "retrieval")
+    graph.add_edge("retrieval", "synthesis")
+    graph.add_edge("synthesis", "verification")
+    graph.add_edge("verification", "report")
+
+    graph.set_finish_point("report")
+
+    return graph.compile()
