@@ -25,7 +25,7 @@ User Query → Intent Analyzer → Research Planner → Retrieval → Synthesis 
 See repository tree for modular agent design.
 
 ## Status
-🚧 In progress — foundation complete, agent logic under development.
+In progress — foundation complete, agent logic under development.
 
 
 Structure:
