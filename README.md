@@ -291,3 +291,78 @@ The generated report typically includes:
 The core agentic research pipeline is complete and functional.
 The project is considered stable and suitable for academic exploration,
 demonstration, and further extension.
+
+
+
+-------------------------------------------------
+
+### if want to run on UI
+
+## 🚀 Live Demo
+
+The project is deployed as an interactive Streamlit application.
+
+👉 **Live App:** https://<your-streamlit-app-url>
+
+The UI allows users to:
+- Enter custom research questions
+- View the final research report
+- Inspect intermediate agent outputs (planning, synthesis, verification)
+
+
+## 🖥️ Running the Application
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/<username>/AI-Research-Agent.git
+cd AI-Research-Agent
+```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Set environment variables
+- Create a .env file:
+```bash
+GEINI_API_KEY=your_api_key_here
+```
+
+### 4. Run the streamlit App
+- Create a .env file:
+```bash
+streamlit run app.py
+```
+
+
+## 🎛️ Application Modes
+
+The system supports two interaction styles:
+
+- **End-User Mode**
+  - Displays the final research report
+  - Suitable for quick literature exploration
+
+- **Research / Debug Mode**
+  - Displays intermediate agent outputs:
+    - Research scope
+    - Planning steps
+    - Synthesized notes
+    - Verification flags
+  - Useful for understanding agent reasoning and decision flow
+
+
+## ☁️ Deployment
+
+The application is deployed using **Streamlit Community Cloud**.
+
+Secrets such as API keys are managed securely using Streamlit's secrets manager and are not stored in the repository.
+
+
+
+## 👤 Author
+**Mohammed Abdul Rafe Sajid**
+- LinkedIn: https://www.linkedin.com/in/<https://www.linkedin.com/in/mohammed-abdul-rafe-sajid-49a716291/>
+
