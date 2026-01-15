@@ -3,6 +3,26 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+# Dev/debug scripts
+list_models.py
+
+# Environment variables
+.env
+
+# Data
+data/
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
 
 # Virtual env
 .venv/

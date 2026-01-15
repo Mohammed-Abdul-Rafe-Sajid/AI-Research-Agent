@@ -2,3 +2,10 @@ langgraph
 fastapi
 streamlit
 pydantic
+python-dotenv
+google-genai
+requests
+feedparser
+pdfminer.six
+google-search-results  # for SerpAPI client (if you use SERPAPI_KEY)
+serpapi                 # sometimes named google-search-results
