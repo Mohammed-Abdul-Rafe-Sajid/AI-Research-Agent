@@ -200,10 +200,6 @@ academic-style report to the console.
 
 
 ---
-
-## ✅ STEP 9 — Example Queries & Outputs
-
-```markdown
 ## 📌 Example Queries
 
 The following query patterns work well:
