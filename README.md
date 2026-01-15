@@ -302,7 +302,7 @@ demonstration, and further extension.
 
 The project is deployed as an interactive Streamlit application.
 
-👉 **Live App:** https://<your-streamlit-app-url>
+👉 **Live App:** https://ai-research-tool-rafe.streamlit.app/
 
 The UI allows users to:
 - Enter custom research questions
@@ -315,7 +315,7 @@ The UI allows users to:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<username>/AI-Research-Agent.git
+git clone https://github.com/Mohammed-Abdul-Rafe-Sajid/AI-Research-Agent
 cd AI-Research-Agent
 ```
 
