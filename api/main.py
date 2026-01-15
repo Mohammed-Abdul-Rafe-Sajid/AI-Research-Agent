@@ -12,6 +12,10 @@ if __name__ == "__main__":
 
     print(final_state["research_scope"])
     print(final_state["plan"])
+    print("NOTES:")
+    for note in final_state["notes"]:
+        print(note)
+
 
 
 

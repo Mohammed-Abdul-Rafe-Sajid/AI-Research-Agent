@@ -19,6 +19,7 @@ class ResearchState(BaseModel):
 
     # Later steps (placeholders – fine to keep)
     notes: List[Dict[str, Any]] = Field(default_factory=list)
+
     flags: List[Dict[str, Any]] = Field(default_factory=list)
     final_report: str = ""
     confidence_score: float = 0.0
