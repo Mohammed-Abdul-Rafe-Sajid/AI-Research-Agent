@@ -16,6 +16,15 @@ if __name__ == "__main__":
     for note in final_state["notes"]:
         print(note)
 
+    print("\nVERIFIED NOTES:")
+    for note in final_state["notes"]:
+        print(note)
+
+    print("\nFLAGS:")
+    for flag in final_state["flags"]:
+        print(flag)
+
+
 
 
 
