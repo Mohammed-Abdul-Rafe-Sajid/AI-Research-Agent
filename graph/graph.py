@@ -21,6 +21,13 @@ def build_graph():
     graph.add_node("report", report_node)
 
     graph.set_entry_point("intent")
+    
+
+    # graph.add_edge("intent", "planner")
+    # graph.add_edge("planner", "retrieval")
+    # graph.add_edge("retrieval", "memory")
+    # graph.add_edge("memory", "synthesis")
+    # graph.add_edge("synthesis", END)
 
     graph.add_edge("intent", "planner")
     graph.add_edge("planner", "retrieval")

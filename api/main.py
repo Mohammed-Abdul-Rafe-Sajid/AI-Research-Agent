@@ -24,6 +24,10 @@ if __name__ == "__main__":
     for flag in final_state["flags"]:
         print(flag)
 
+    print("\nFINAL REPORT:\n")
+    print(final_state["final_report"])
+
+
 
 
 
