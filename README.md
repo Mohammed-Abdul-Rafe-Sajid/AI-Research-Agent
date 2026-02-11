@@ -2,7 +2,6 @@
 
 An end-to-end, agent-based AI system designed to autonomously conduct
 exploratory academic research.
-
 Given a high-level research question, the system plans a research strategy,
 retrieves relevant literature, stores evidence in vector memory, synthesizes
 findings, verifies claims, and generates a structured, academic-style report.
