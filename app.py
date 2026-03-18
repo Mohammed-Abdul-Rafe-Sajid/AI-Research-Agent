@@ -10,9 +10,34 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+import sys
+import importlib.metadata as importlib_metadata
+
+# Environment diagnostics needed for debugging streamlit vs flask vs CLI
+python_exec = sys.executable
+
+def get_pkg_version(name: str) -> str:
+    try:
+        return importlib_metadata.version(name)
+    except importlib_metadata.PackageNotFoundError:
+        return "not installed"
+
+streamlit_versions = {
+    "python_executable": python_exec,
+    "google_genai": get_pkg_version("google-genai"),
+    "langgraph": get_pkg_version("langgraph"),
+}
+
 # ---------------- SIDEBAR ----------------
 with st.sidebar:
     st.title("🎓 About")
+    st.markdown("""
+    **Runtime environment**
+    """
+    )
+    st.write(streamlit_versions)
+    st.divider()
+
 
     st.markdown(
         """
